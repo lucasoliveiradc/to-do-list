@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+:root{
+
+    --font-destaque: 'Dancing Script', sans-serif;
+    --cor-fundo: #E6DFD2;
+    --cor-to-do: #ffff;
+}   
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html{
+    height: 100vh;
+    background-color: var(--cor-fundo);
+}
+
+
+h1{
+    font-family: var(--font-destaque);
+    text-align: center;
+    padding: 20px;
+    font-size: 3.5vw;
+}
+
+section{
+
+    width: 55vw;
+    background-color: white;
+    margin: 35px auto;
+    border-radius: 15px;
+    padding: 15px;
+    
+}
+ 
+input[type=text]{
+   
+    
+    width: 80%;
+    height: 30px;
+    background: #FFFFFF;
+    border-radius: 2px;
+    margin-bottom: 5px;
+
+}
+
+input[type=button]{
+    
+    width: 54px;
+    height: 35px;
+    background: #E6DFD2;
+    border: 1px solid #000000;
+    border-radius: 2px;
+
+}
+
+#todolist{
+
+    margin-top: 75px;
+}
+
+
+
+
