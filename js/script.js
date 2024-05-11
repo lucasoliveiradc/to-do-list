@@ -15,8 +15,12 @@ function adicionar(){
         tarefas.setAttribute('type', 'text');
         tarefas.setAttribute('value', tarefa.value);
         tarefas.innerText = `${tarefa.value}`
-        
         result.appendChild(tarefas);
+
+        let button = document.createElement('button');
+        let clear = document.createTextNode("Apagar");
+        button.appendChild(clear);
+        result.appendChild(button);
 
         if(tarefa.value != ""){
             tarefa.value = "";
