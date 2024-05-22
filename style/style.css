@@ -49,6 +49,12 @@ input[type=text]{
 
 }
 
+input[type=text].list{
+    width: 50%;
+    position: relative;
+    left: 5%;
+}
+
 input[type=button]{
     
     width: 54px;
@@ -71,6 +77,8 @@ input[type="checkbox"]{
     cursor: pointer;
     display: grid;
     place-content: center;
+    position: relative;
+    top: 40px;
 }
 
 input[type="checkbox"]::before{
@@ -97,7 +105,7 @@ input[type="checkbox"]:checked::before{
 
 #todolist button{
     position: relative;
-    right: 5px;
+    left: 5%;
     
 }
 

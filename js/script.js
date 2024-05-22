@@ -14,7 +14,8 @@ function adicionar(){
         let tarefas = document.createElement('input');
         tarefas.setAttribute('type', 'text');
         tarefas.setAttribute('value', tarefa.value);
-        tarefas.innerText = `${tarefa.value}`
+        tarefas.innerText = `${tarefa.value}`;
+        tarefas.classList.add("list"); 
         result.appendChild(tarefas);
 
         let button = document.createElement('button');
