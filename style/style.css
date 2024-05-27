@@ -106,7 +106,19 @@ input[type="checkbox"]:checked::before{
 #todolist button{
     position: relative;
     left: 5%;
-    
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    top: 10px;
+    appearance: none;
+    border: none;
+    background-color: var(--cor-to-do);
+}
+
+
+img{
+    width: 30px;
+    height: 30px;
 }
 
 
