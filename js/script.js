@@ -28,6 +28,8 @@ function adicionar(){
         button.setAttribute("type", "button")
         let clear = document.createTextNode("");
 
+        button.addEventListener("click", excluir);
+
         //button personalizado
         let img = document.createElement("img");
         img.src = "imgs/trash-can.png";
@@ -44,10 +46,21 @@ function adicionar(){
     else{
         alert('[ERRO] Alguma tarefa precisa ser adicionada.')
     }
-    
-}
 
+}
 
 function confirm(){
-    
+    alert("[TESTE] A TAREFA FOI CONCLUÍDA")
+    /*
+    var confirmado = document.querySelector(".list")
+    confirmado.style.color = 'red';
+    adicionar();
+    */
 }
+
+
+function excluir(){
+    alert("[TESTE] ATENÇÃO ESTA TAREFA FOI EXCLUIDA");
+
+}
+
