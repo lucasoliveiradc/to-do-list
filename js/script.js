@@ -7,11 +7,15 @@ function adicionar(){
     if(tarefa.value.length != 0){
 
         lista.push(tarefa.value);
+        let todolist = document.createElement('p');
+        todolist.id = "teste";
+        result.appendChild(todolist);
         //Checkbox
         let check = document.createElement("input");
         check.setAttribute("type", "checkbox");
         check.classList.add("checar");
-        result.appendChild(check);
+        todolist.appendChild(check);
+        //result.appendChild(check);
         check.addEventListener("click", confirm);
 
 
@@ -20,13 +24,15 @@ function adicionar(){
         tarefas.setAttribute('type', 'text');
         tarefas.setAttribute('value', tarefa.value);
         tarefas.innerText = `${tarefa.value}`;
-        tarefas.classList.add("list"); 
-        result.appendChild(tarefas);
+        tarefas.classList.add("list");
+        todolist.appendChild(tarefas);
+        //result.appendChild(tarefas);
 
         //button caso tenha inserido errado o todo
         let button = document.createElement('button');
         button.setAttribute("type", "button")
         let clear = document.createTextNode("");
+        
 
         button.addEventListener("click", excluir);
 
@@ -34,7 +40,8 @@ function adicionar(){
         let img = document.createElement("img");
         img.src = "imgs/trash-can.png";
         button.appendChild(img);
-        result.appendChild(button);
+        todolist.appendChild(button);
+
 
 
         if(tarefa.value != ""){
@@ -50,7 +57,7 @@ function adicionar(){
 }
 
 function confirm(){
-    alert("[TESTE] A TAREFA FOI CONCLUÍDA")
+    alert("[TESTE] A TAREFA FOI CONCLUÍDA");
     /*
     var confirmado = document.querySelector(".list")
     confirmado.style.color = 'red';
@@ -60,7 +67,9 @@ function confirm(){
 
 
 function excluir(){
-    alert("[TESTE] ATENÇÃO ESTA TAREFA FOI EXCLUIDA");
+    let ex = document.getElementById("teste");
+    ex.remove();
+    //removeChild(ex.ElementChild);
+    }
 
-}
-
+    
