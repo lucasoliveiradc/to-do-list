@@ -57,19 +57,18 @@ function adicionar(){
 }
 
 function confirm(){
-    alert("[TESTE] A TAREFA FOI CONCLUÍDA");
-    /*
-    var confirmado = document.querySelector(".list")
-    confirmado.style.color = 'red';
-    adicionar();
-    */
+
+    
+    let confirmado = document.querySelector(".list");
+    confirmado.style.textDecoration = "line-through";
+    confirmado.style.color = 'grey';
+    
 }
 
 
 function excluir(){
     let ex = document.getElementById("teste");
     ex.remove();
-    //removeChild(ex.ElementChild);
     }
 
     
